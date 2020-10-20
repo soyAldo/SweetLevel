@@ -1,0 +1,8 @@
+main: org.kayteam.sweet.level.SweetLevel
+version: 1.0.0
+name: SweetLevel
+author: soyAldo
+website: https://kayteam.org
+commands:
+  SweetLevelAdmin:
+    description: "SweetLevel admin command"
