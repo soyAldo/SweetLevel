@@ -6,3 +6,35 @@ website: https://kayteam.org
 commands:
   SweetLevelAdmin:
     description: "SweetLevel admin command"
+    aliases:
+      - sladmin
+      - sla
+  SweetLevelLevel:
+    description: "Manage player level"
+    aliases:
+      - sllevel
+      - sll
+      - level
+  SweetLevelExperience:
+    description: "Manage player experience"
+    aliases:
+      - slexperience
+      - sle
+      - experience
+permisions:
+  SweetLevel.*:
+    description: "Can use all plugin."
+    children:
+      SweetLevel.Command.*: true
+  SweetLevel.Command.*:
+    description: "Can execute all commands."
+    children:
+      SweetLevel.Command.Admin: true
+      SweetLevel.Command.Level: true
+      SweetLevel.Command.Experience: true
+  SweetLevel.Command.Admin:
+    description: "Can execute /SweetLevelAdmin command"
+  SweetLevel.Command.Level:
+    description: "Can execute /SweetLevelLevel command"
+  SweetLevel.Command.Experience:
+    description: "Can execute /SweetLevelExperience command"

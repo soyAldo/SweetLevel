@@ -39,7 +39,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propGUI" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -66,17 +66,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="457" y="28" key="#Auto_Import/0.0.1366.728@0.0.1366.728" timestamp="1603161404461" />
-    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1603165094838">
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1603244869859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603165094838" />
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603244869859" />
     <state x="412" y="152" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603164615307">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="152" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1603164615307" />
-    <state x="348" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603166021606">
+    <state x="328" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603224765146">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="348" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1603166021606" />
+    <state x="328" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1603224765146" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1603221263130">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603221263130" />
   </component>
 </project>

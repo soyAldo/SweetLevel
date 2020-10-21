@@ -1,0 +1,21 @@
+level:
+  noPermission: "&cYou do not have permission to use this command."
+  help:
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+  playerEmpty: "&cThe player name is empty."
+  levelEmpty: "&cThe level is empty."
+  playerInvalid: "&cThe player &f%player% &cis invalid or is disconnect."
+  levelInvalid: "&cThe level &f%level% &cno is a number."
+  set:
+    trying: "&6Trying set the level &f%level% &6to player &f%player% &6..."
+    completed: "&aThe level has been set in &f%level% &afor player &f%player%"
+    failed: "&cThe try has failed."
+  give:
+    trying: "&6Trying give &f%levels% &6 to player &f%player%&6."
+    completed: "&aThe player &f%player% &agived &f%levels% &alevels."
+    failed: "&cThe try has failed."

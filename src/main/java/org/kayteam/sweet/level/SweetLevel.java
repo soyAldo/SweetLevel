@@ -1,6 +1,7 @@
 package org.kayteam.sweet.level;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.kayteam.sweet.level.levelmanager.LevelManager;
 import org.kayteam.sweet.level.listeners.PlayerJoinListener;
 import org.kayteam.sweet.level.listeners.PlayerQuitListener;
 import org.kayteam.sweet.level.playerdata.PlayerDataManager;
@@ -19,6 +20,11 @@ public class SweetLevel extends JavaPlugin {
 
     private final PlayerDataManager playerDataManager = new PlayerDataManager(this);
 
+    private final LevelManager levelManager = new LevelManager(this);
+
+    public static API api;
+
+    // Demons Kings
     @Override
     public void onEnable() {
         registerFiles();
@@ -33,6 +39,7 @@ public class SweetLevel extends JavaPlugin {
         } else {
             storage = new YamlStorage(this);
         }
+        api = new API(this);
     }
 
     public void reload() {
@@ -68,5 +75,13 @@ public class SweetLevel extends JavaPlugin {
 
     public PlayerDataManager getPlayerDataManager() {
         return playerDataManager;
+    }
+
+    public LevelManager getLevelManager() {
+        return levelManager;
+    }
+
+    public static API getApi() {
+        return api;
     }
 }

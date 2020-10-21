@@ -5,31 +5,19 @@ import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class ExperienceChangeEvent extends Event implements Cancellable {
+public class PlayerGiveExperienceEvent extends Event implements Cancellable {
 
     public static HandlerList handlerList = new HandlerList();
-    private boolean cancel;
+    private boolean cancel = false;
 
     private final Player player;
     private final double currentExperience;
-    private final double newExperience;
+    private double giveExperience;
 
-    public ExperienceChangeEvent(Player player, double currentExperience, double newExperience) {
+    public PlayerGiveExperienceEvent(Player player, double currentExperience, double giveExperience) {
         this.player = player;
         this.currentExperience = currentExperience;
-        this.newExperience = newExperience;
-    }
-
-    public Player getPlayer() {
-        return player;
-    }
-
-    public double getCurrentExperience() {
-        return currentExperience;
-    }
-
-    public double getNewExperience() {
-        return newExperience;
+        this.giveExperience = giveExperience;
     }
 
     @Override
@@ -50,4 +38,22 @@ public class ExperienceChangeEvent extends Event implements Cancellable {
     public void setCancelled(boolean cancel) {
         this.cancel = cancel;
     }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public double getCurrentExperience() {
+        return currentExperience;
+    }
+
+    public double getGiveExperience() {
+        return giveExperience;
+    }
+
+    public void setGiveExperience(double giveExperience) {
+        this.giveExperience = giveExperience;
+    }
+
 }
+
